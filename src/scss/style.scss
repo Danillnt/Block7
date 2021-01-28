@@ -1,0 +1,191 @@
+@import "burger_1.scss";
+@import "header-nav_2.scss";
+@import "main-nav_3.scss";
+@import "main-overflow_4.scss";
+@import "main-article_5.scss";
+@import "swiper-brend_6.scss";
+@import "swiper-device_7.scss";
+@import "swiper-price_8.scss";
+@import "footer_9.scss";
+@import "call-back_10.scss";
+@import "feedback_11.scss";
+@import "swipe-style_12.scss";
+
+// ------Переменные------
+$color_1: white;
+$color_2: #f8f8f8;
+$color_3: #eaeaea;
+$color_4: #f7caca;
+$color_5: #41f6d7;
+$color_6: #7e7e82;
+$color_7: #fff;
+$color_8: #f2f2f2;
+$color_9: #1b1c21;
+$color_10: #ff3e79;
+
+// -----Шрифты------
+@font-face {
+   font-family: TTLakes;
+   src: url(../fonts/TTLakes-Regular.ttf);
+}
+
+@font-face {
+   font-family: TTLakes-Bold;
+   src: url(../fonts/TTLakes-Bold.ttf);
+}
+
+@font-face {
+   font-family: TTLakes-Light;
+   src: url(../fonts/TTLakes-Light.ttf);
+}
+
+body {
+   font-family: TTLakes, sans-serif;
+}
+
+// --------Общие стили для элементов-------
+.btn {
+   width: 40px;
+   height: 40px;
+   border: 0;
+   border-radius: 50%;
+   outline: none;
+   background-color: $color_10;
+   background-repeat: no-repeat;
+   background-position: center;
+   transition: all 0.3s;
+
+   &:hover {
+      background-color: $color_4;
+   }
+}
+
+.button_wrapper {
+   width: 40px;
+   height: 40px;
+   border: 1px solid $color_10;
+   border-radius: 50%;
+   outline: none;
+   background-color: $color_1;
+   background-image: url("../image/dropdown.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   transition: all 0.3s;
+
+   &:hover {
+      background-color: $color_10;
+      background-image: url("../image/dropdown-btn.svg");
+   }
+}
+
+.service__button {
+   background-color: $color_10;
+   color: $color_1;
+   border-radius: 16px 16px 16px 16px;
+   border: 1px solid $color_1;
+   width: 119px;
+   height: 32px;
+   background-image: url("../image/dropdown-btn.svg");
+   background-repeat: no-repeat;
+   text-align: unset;
+   background-position: 90%;
+   text-transform: uppercase;
+   font-size: 12px;
+   font-weight: bold;
+
+   &:hover {
+      background-color: $color_4;
+   }
+}
+
+.block-open-btn {
+   margin-bottom: 20px;
+   margin-top: 20px;
+   margin-left: 16px;
+
+   .btn-open {
+      width: 140px;
+      height: 24px;
+      border: 0;
+      background-color: $color_2;
+      font-family: TTLakes, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      position: relative;
+
+      &::before {
+         content: "";
+         display: block;
+         background-image: url("../image/download.svg");
+         width: 8px;
+         height: 15px;
+         position: absolute;
+         top: 6px;
+         background-repeat: no-repeat;
+      }
+   }
+}
+
+.block-close-btn {
+   margin-bottom: 20px;
+   margin-top: 20px;
+   margin-left: 16px;
+
+   .btn-close {
+      width: 95px;
+      height: 24px;
+      border: 0;
+      background-color: $color_2;
+      font-family: TTLakes, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      position: relative;
+
+      &::before {
+         content: "";
+         display: block;
+         background-image: url("../image/brend-type-btn_close.svg");
+         width: 8px;
+         height: 15px;
+         position: absolute;
+         top: 6px;
+         background-repeat: no-repeat;
+      }
+   }
+}
+
+.divider-nav {
+   width: 2px;
+   height: 32px;
+   background-color: $color_3;
+   border-radius: 1px;
+   border: 0px solid;
+}
+
+.btn-call {
+   background-image: url("../image/menu2__button2.svg");
+}
+
+.btn-feedback {
+   background-image: url("../image/menu2__button3.svg");
+}
+
+.btn-entrance {
+   background-image: url("../image/menu2__button4.svg");
+}
+
+.btn-repair {
+   background-image: url("../image/menu3__button5.svg");
+}
+.btn-status {
+   background-image: url("../image/menu3__button6.svg");
+}
+
+.title-main {
+   display: flex;
+   text-transform: uppercase;
+   padding: 16px 0px 16px 24px;
+   margin-bottom: 24px;
+   color: #7e7e82;
+   background-image: linear-gradient(to left, $color_1, $color_2);
+}

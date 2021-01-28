@@ -1,0 +1,78 @@
+.article__paragraf {
+   margin-left: 18px;
+}
+
+@media only screen and (max-width: 800px) {
+   .article__paragraf {
+      display: none;
+   }
+}
+
+.article-content {
+   display: flex;
+
+   .article-content__collum-image {
+      flex-basis: 50%;
+
+      .article-content__collum-image__logo {
+         padding: 20px 20px 20px 0;
+         max-height: 384px;
+         max-width: 532px;
+      }
+   }
+}
+
+@media only screen and (max-width: 700px) {
+   .article-content {
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+}
+
+.article-content__collum-text {
+   flex-basis: 50%;
+
+   .article-content__collum-text-description {
+      margin-left: 16px;
+      margin-right: 16px;
+      padding-bottom: 0px;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+
+      @media only screen and (max-width: 700px) {
+         .br {
+            display: none;
+         }
+      }
+
+      @media only screen and (max-width: 800px) {
+         .article-content__collum-text-description_tablet-hide {
+            display: none;
+         }
+      }
+
+      @media only screen and (max-width: 700px) {
+         .article-content__collum-text-description_mobile-hide {
+            display: none;
+         }
+      }
+   }
+}
+
+.article-content__collum-image__logo_big {
+   width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+   .article-content__collum-image__logo_big {
+      border-radius: 5px;
+   }
+}
+
+@media only screen and (max-width: 700px) {
+   .article-content__collum-image__logo {
+      padding-top: 0px;
+      padding-right: 0px;
+   }
+}

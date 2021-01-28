@@ -1,0 +1,109 @@
+$color_1: white;
+$color_3: #eaeaea;
+
+.feedback-container {
+   width: 440px;
+   height: 100%;
+   margin-top: 0px;
+   display: flex;
+   flex-direction: column;
+   display: none;
+   z-index: 20;
+   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), -23px 0 20px -23px rgba(0, 0, 0, 0.8);
+
+   .feedback-hedar {
+      display: flex;
+      flex-direction: row;
+
+      .feedback-container__title {
+         align-self: flex-start;
+         padding-left: 16px;
+      }
+   }
+
+   .feedback-container__button-send {
+      align-self: flex-end;
+      padding-right: 16px;
+   }
+   .feedback-container__input {
+      align-self: center;
+   }
+
+   .feedback-container__text {
+      align-self: center;
+      padding-left: 16px;
+      padding-right: 16px;
+   }
+
+   .feedback-container__button {
+      padding-left: 16px;
+      padding-top: 26px;
+   }
+}
+
+.feedback-container div:nth-child(3),
+.feedback-container div:nth-child(4),
+.feedback-container div:nth-child(5) {
+   margin-bottom: 16px;
+}
+
+.feedback-container__text span {
+   color: red;
+}
+
+.feedback-container__text p {
+   font-size: 16px;
+}
+
+.feedback-input {
+   border: 1px solid $color_3;
+   border-radius: 8px;
+   width: 376px;
+   height: 48px;
+}
+
+.feedback-input.textarea {
+   height: 118px;
+}
+
+.diwider-swipe {
+   border: 0px;
+   width: 3px;
+   height: 40px;
+   border-radius: 2px;
+   background-color: $color_5;
+   top: 38px;
+   position: absolute;
+}
+@media only screen and (max-width: 1000px) {
+   .diwider-swipe {
+      top: 85px;
+   }
+}
+// ----------------------
+.feedback--open {
+   display: flex;
+   position: absolute;
+   top: -1px;
+   // opacity: 20;
+   background-color: $color_1;
+   right: -1px;
+}
+@media only screen and (min-width: 1000px) {
+   .feedback-container__button_close {
+      position: absolute;
+      left: -61px;
+   }
+}
+
+@media only screen and (max-width: 400px) {
+   .main-content .feedback-container {
+      position: static;
+      width: 300px;
+      z-index: 30;
+      background-color: $color_1;
+   }
+   .feedback-container__input .feedback-input {
+      width: 250px;
+   }
+}

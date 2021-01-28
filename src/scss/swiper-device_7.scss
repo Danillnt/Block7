@@ -1,0 +1,87 @@
+$color_7: #fff;
+$color_9: #1b1c21;
+
+.device-types {
+   flex-wrap: wrap;
+   display: flex;
+   padding: 0 24px;
+
+   .device-type {
+      display: inline-flex;
+      margin-bottom: 16px;
+      margin-right: 24px;
+   }
+}
+
+.devic-type__small-card {
+   display: flex;
+   position: relative;
+   justify-content: space-between;
+   width: 240px;
+   height: 160px;
+   margin-right: 24px;
+   border-radius: 6px;
+   border: 1px solid $color_8;
+   background: $color_7;
+   cursor: pointer;
+   text-decoration: none;
+   color: $color_9;
+
+   .card-devic {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+
+      .card-devic__button {
+         align-self: flex-end;
+         padding-right: 11px;
+         padding-bottom: 5px;
+      }
+
+      .card-devic__text {
+         padding-left: 11px;
+         padding-top: 5px;
+         color: $color_9;
+         line-height: 24px;
+         letter-spacing: -0.2px;
+         font-weight: 900;
+      }
+   }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 650px) {
+   .device-types__wrapper_monitor-repair {
+      padding-top: 16px;
+      display: none;
+   }
+   .devic-type__small-card {
+      width: 215px;
+   }
+   .device-types .devic-type:nth-child(3) a {
+      /* background-color: crimson; */
+      margin-right: 0px;
+   }
+}
+
+@media only screen and (max-width: 500px) {
+   .device-types .devic-type__small-card {
+      width: 200px;
+   }
+}
+// -----------------------------------
+.devic-type-btn_close {
+   display: none;
+}
+
+.open--monitor {
+   display: block;
+}
+
+.open--btnClose {
+   display: block;
+}
+
+.hidden--btnOpen {
+   display: none;
+}
