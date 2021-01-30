@@ -97,6 +97,7 @@ $color_9: #1b1c21;
 .swipe-container-burger {
    width: 320px;
    min-height: 100vh;
+   position: -webkit-sticky;
    position: sticky; /*зафиксировали позицию блока*/
    top: 0;
    left: 0;
@@ -129,6 +130,10 @@ $color_9: #1b1c21;
       width: 3px;
       height: 32px;
       background-color: $color_5;
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
    }
    @media only screen and (min-height: 800px) {
       .swipe-main-nav__divider {
