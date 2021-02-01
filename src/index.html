@@ -10,7 +10,8 @@
    <link rel="stylesheet" type="text/css" href="css/style.css">
    <link rel="stylesheet" type="text/css" href="css/normalize.css">
    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
-   <link rel="stylesheet" href="css/swiper.min.css">
+
+   <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
    <!-- <link rel="stylesheet" href="css/swipe-style.css"> -->
    <!-- <link rel="stylesheet" href="css/style_block_5_mobile_menu.css"> -->
 </head>
@@ -192,7 +193,7 @@
             <div class="swiper">
                <div class="swiper__title title-main">Ремонт техники различных брендов</div>
 
-               <div class="slider-container">
+               <div class="slider-container swiper-container--brend">
                   <div class="brend-types swiper-wrapper">
 
                      <div class="brend-type card">
@@ -316,8 +317,9 @@
                         </a>
                      </div>
                   </div>
-                  <!-- <div class="swiper-pagination"></div> -->
+
                </div>
+               <div class="swiper-pagination swiper-pagination1"></div>
                <div class="block-open-btn">
                   <button class="btn-open swiper-btn-thema_wrapper brend-type-btn">Показать
                      все</button>
@@ -330,7 +332,7 @@
             <div class="swiper-device">
                <div class="title-device title-main">Ремонт различных видов техники</div>
 
-               <div class="slider-container">
+               <div class="slider-container swiper-container--device">
                   <div class="device-types swiper-wrapper">
 
                      <div class="devic-type card">
@@ -378,9 +380,9 @@
                      </div>
 
                   </div>
-                  <!-- <div class="swiper-pagination"></div> -->
-               </div>
 
+               </div>
+               <div class="swiper-pagination swiper-pagination2"></div>
                <div class="block-open-btn">
                   <button class="btn-open swiper-btn-thema_wrapper devic-type-btn">Показать
                      все</button>
@@ -392,7 +394,7 @@
             </div>
             <!----------------------------------swiper-price_8------------------------------------->
             <div class="title-main">цены на услуги</div>
-            <div class="price-type">
+            <div class="price-type swiper-container--price">
                <!-- /*slider-container*/ -->
 
                <div class="price-type-content">
@@ -484,8 +486,9 @@
                   </div>
 
                </div>
-               <!-- <div class="swiper-pagination"></div> -->
+
             </div>
+            <div class="swiper-pagination swiper-pagination3"></div>
             <div class="info-price">
                <p class="info-price__text">
                   Все цены указаны с учетом НДС. Стоимость ремонта указана <br>
@@ -567,6 +570,7 @@
    <script src="src/script.js"></script>
    <script src="src/swiper.min.js"></script>
    <script src="src/slider.js"></script>
+
 </body>
 
 </html>

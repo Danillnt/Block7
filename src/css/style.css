@@ -86,7 +86,6 @@
 .swipe-container-burger {
   width: 320px;
   min-height: 100vh;
-  position: -webkit-sticky;
   position: sticky;
   /*зафиксировали позицию блока*/
   top: 0;
@@ -120,10 +119,10 @@
   width: 3px;
   height: 32px;
   background-color: #41f6d7;
-  -webkit-transform: ;
-  -moz-transform: ;
-  -ms-transform: ;
-  -o-transform: ;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 @media only screen and (min-height: 800px) {
   .swipe-main-nav__divider .swipe-main-nav__divider {
@@ -393,16 +392,12 @@
   }
 }
 @media only screen and (max-width: 800px) {
-  .article-content__collum-text
-    .article-content__collum-text-description
-    .article-content__collum-text-description_tablet-hide {
+  .article-content__collum-text .article-content__collum-text-description .article-content__collum-text-description_tablet-hide {
     display: none;
   }
 }
 @media only screen and (max-width: 700px) {
-  .article-content__collum-text
-    .article-content__collum-text-description
-    .article-content__collum-text-description_mobile-hide {
+  .article-content__collum-text .article-content__collum-text-description .article-content__collum-text-description_mobile-hide {
     display: none;
   }
 }
@@ -481,7 +476,7 @@
 
 @media only screen and (max-width: 1000px) {
   .brend-types__desktop_wrapper-item-acer,
-  .brend-types__desktop_wrapper-item-sony {
+.brend-types__desktop_wrapper-item-sony {
     display: none;
   }
 
@@ -809,7 +804,6 @@
   z-index: 20;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), -23px 0 20px -23px rgba(0, 0, 0, 0.8);
 }
-
 .call-back-container .call-back-container__button {
   align-self: flex-end;
   padding-right: 16px;
@@ -1004,13 +998,22 @@
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  margin: 0px 15px;
+  margin: 0px 5px;
+  margin-top: 10px;
   opacity: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .swiper-pagination {
-  position: static;
-  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #b5b6bc;
 }
 
 .swiper-container {
@@ -1034,7 +1037,9 @@
   }
 }
 @media (min-width: 600px) {
-  .swiper-pagination {
+  .swiper-pagination1,
+.swiper-pagination2,
+.swiper-pagination3 {
     display: none;
   }
 }
@@ -1080,14 +1085,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   transition: all 0.3s;
-  -webkit-border-radius: ;
-  -moz-border-radius: ;
-  -ms-border-radius: ;
-  -o-border-radius: ;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
 }
 .button_wrapper:hover {
   background-color: #ff3e79;
@@ -1108,10 +1105,6 @@ body {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
-  -webkit-border-radius: ;
-  -moz-border-radius: ;
-  -ms-border-radius: ;
-  -o-border-radius: ;
 }
 .service__button:hover {
   background-color: #f7caca;
@@ -1175,10 +1168,6 @@ body {
   background-color: #eaeaea;
   border-radius: 1px;
   border: 0px solid;
-  -webkit-border-radius: ;
-  -moz-border-radius: ;
-  -ms-border-radius: ;
-  -o-border-radius: ;
 }
 
 .btn-call {

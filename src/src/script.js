@@ -11,20 +11,20 @@ var closePopupButton = document.querySelector('.brend-type-btn_close');
 
 
 openPopupButton.addEventListener('click', function () {
-  popuplenovo.classList.add("open--lenovo");      /*открываем лого*/
-  popupSamsung.classList.add("open--samsung");    /*открываем лого*/
-  popupApple.classList.add("open--apple");      /*открываем лого*/
-  openPopupButton.classList.add("close--openBtn"); /*скрываем кнопку "Показать"*/
-  closePopupButton.classList.add("open--closeBtn"); /*Открываем кнопку "Скрыть"*/
+  popuplenovo.classList.add("open--lenovo");
+  popupSamsung.classList.add("open--samsung");
+  popupApple.classList.add("open--apple");
+  openPopupButton.classList.add("close--openBtn");
+  closePopupButton.classList.add("open--closeBtn");
 });
 
 
 closePopupButton.addEventListener('click', function () {
-  popuplenovo.classList.remove("open--lenovo");      /*открываем лого*/
-  popupSamsung.classList.remove("open--samsung");    /*открываем лого*/
-  popupApple.classList.remove("open--apple");      /*открываем лого*/
-  openPopupButton.classList.remove("close--openBtn"); /*скрываем кнопку "Показать"*/
-  closePopupButton.classList.remove("open--closeBtn"); /*Открываем кнопку "Скрыть"*/
+  popuplenovo.classList.remove("open--lenovo");
+  popupSamsung.classList.remove("open--samsung");
+  popupApple.classList.remove("open--apple");
+  openPopupButton.classList.remove("close--openBtn");
+  closePopupButton.classList.remove("open--closeBtn");
 });
 
 
@@ -70,23 +70,60 @@ var closePopupBurger = document.querySelector('.swipe-nav-header__btn-thema_clos
 
 var hiddenContainer = document.querySelector('.container');
 
+let clickClose = document.querySelector('.main');
+let clickClose2 = document.querySelector('.header-nav__logo');
+let clickClose3 = document.querySelector('.header-nav__tablet-list');
+let clickClose4 = document.querySelector('.header-nav__mobile-list');
+
 openPopupBurger.addEventListener('click', function () {
   if (window.matchMedia('(max-width: 400px)').matches) {
     hiddenContainer.classList.add("hidden--container");
 
     popupBurger.classList.add("modal--burger");
     popupContainer.classList.add("modal--container");
+
   } else {
     popupBurger.classList.add("modal--burger");
     popupContainer.classList.add("modal--container");
+
   };
 });
+
+
 
 closePopupBurger.addEventListener('click', function () {
   popupBurger.classList.remove("modal--burger");
   popupContainer.classList.remove("modal--container");
   hiddenContainer.classList.remove("hidden--container");
+
 });
+
+
+clickClose.addEventListener('click', function () {
+  popupBurger.classList.remove("modal--burger");
+  popupContainer.classList.remove("modal--container");
+  hiddenContainer.classList.remove("hidden--container");
+});
+
+clickClose2.addEventListener('click', function () {
+  popupBurger.classList.remove("modal--burger");
+  popupContainer.classList.remove("modal--container");
+  hiddenContainer.classList.remove("hidden--container");
+});
+
+clickClose3.addEventListener('click', function () {
+  popupBurger.classList.remove("modal--burger");
+  popupContainer.classList.remove("modal--container");
+  hiddenContainer.classList.remove("hidden--container");
+});
+
+clickClose4.addEventListener('click', function () {
+  popupBurger.classList.remove("modal--burger");
+  popupContainer.classList.remove("modal--container");
+  hiddenContainer.classList.remove("hidden--container");
+});
+
+
 // --------------------------------------------------------------
 
 var popupCallContainer = document.querySelector('.call-back-container');
@@ -155,3 +192,5 @@ gulp.task('default', function () {
     }))
     .pipe(gulp.dest('app/css'));
 });
+
+
