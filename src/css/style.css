@@ -7,6 +7,7 @@
   .block-burger {
     display: none;
     float: left;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), -10px -5px 30px 10px rgba(0, 0, 0, 0.8);
   }
 }
 @media only screen and (min-width: 1100px) {
@@ -820,6 +821,7 @@
   .main-content .call-back-container {
     position: static;
     width: 300px;
+    box-shadow: none;
   }
 
   .call-back-container__input .input {
@@ -989,6 +991,7 @@
     width: 300px;
     z-index: 30;
     background-color: white;
+    box-shadow: none;
   }
 
   .feedback-container__input .feedback-input {
