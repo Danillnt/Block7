@@ -147,12 +147,24 @@ popupCallContainerOpen.addEventListener('click', function () {
 });
 
 popupCallContainerClose.addEventListener('click', function () {
-  hiddenContainer.classList.remove("hidden--container");
-  hiddenBurger.classList.remove("hidden--burger");
 
-  popupCallContainer.classList.remove("call--open");
-  popupContainer.classList.remove("opasity--cotainer");
-  popupBurger.classList.remove("opasity--burger");
+  if (window.matchMedia('(max-width: 400px)').matches) {
+    hiddenBurger.classList.remove("hidden--burger");
+    popupCallContainer.classList.remove("call--open");
+    popupContainer.classList.remove("opasity--cotainer");
+    popupBurger.classList.remove("opasity--burger");
+  } else {
+    hiddenContainer.classList.remove("hidden--container");
+
+    hiddenBurger.classList.remove("hidden--burger");
+    popupCallContainer.classList.remove("call--open");
+    popupContainer.classList.remove("opasity--cotainer");
+    popupBurger.classList.remove("opasity--burger");
+  }
+
+
+
+  // popupContainer.classList.add("modal--container");
 });
 
 // --------------------------------------------------------------
@@ -176,12 +188,20 @@ popupFeedbackContainerOpen.addEventListener('click', function () {
 });
 
 popupFeedbackContainerClose.addEventListener('click', function () {
-  hiddenContainer.classList.remove("hidden--container");
-  hiddenBurger.classList.remove("hidden--burger");
+  if (window.matchMedia('(max-width: 400px)').matches) {
+    hiddenBurger.classList.remove("hidden--burger");
 
-  popupFeedbackContainer.classList.remove("feedback--open");
-  popupContainer.classList.remove("opasity--cotainer");
-  popupBurger.classList.remove("opasity--burger");
+    popupFeedbackContainer.classList.remove("feedback--open");
+    popupContainer.classList.remove("opasity--cotainer");
+    popupBurger.classList.remove("opasity--burger")
+  } else {
+    hiddenContainer.classList.remove("hidden--container");
+    hiddenBurger.classList.remove("hidden--burger");
+
+    popupFeedbackContainer.classList.remove("feedback--open");
+    popupContainer.classList.remove("opasity--cotainer");
+    popupBurger.classList.remove("opasity--burger");
+  }
 });
 
 gulp.task('default', function () {
